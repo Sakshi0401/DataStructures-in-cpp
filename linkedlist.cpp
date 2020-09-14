@@ -1,3 +1,4 @@
+//Program to implement linkedlist in C++
 #include <bits/stdc++.h>
 using namespace std;
 class Node{
@@ -5,7 +6,7 @@ class Node{
 	int data;
 	Node* next;
 };
- void printLL(Node* n)
+ void printLL(Node* n)		//print LinkedList
  {
  	while(n!=NULL)
  	{
@@ -19,20 +20,20 @@ class Node{
  	Node* second=NULL;
  	Node* third=NULL;
  	
- 	first=new Node();
- 	second=new Node();
- 	third=new Node();
+ 	first=new Node();		//create first node
+ 	second=new Node();		//create second node
+ 	third=new Node();		//create third node
  	
- 	first->data=1;
+ 	first->data=1;			//initialize first node
  	first->next=second;
  	
- 	second->data=2;
+ 	second->data=2;			//initialize second node
  	second->next=third;
  	
- 	third->data=3;
+ 	third->data=3;			//initialize third node
  	third->next=NULL;
  	
- 	printLL(first);
+ 	printLL(first);			//function call
  	 return 0;
  	
  }
